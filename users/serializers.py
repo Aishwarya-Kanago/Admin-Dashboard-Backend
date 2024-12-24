@@ -34,7 +34,8 @@ class UserSerializer(serializers.ModelSerializer):
         profile_data = validated_data.pop('profile', {})
         profile = instance.profile
 
-        instance.first_name = validated_data.get('first_name', instance.first_name) 
+        instance.first_name = validated_data.get('first_name', instance.first_name)
+        instance.username = validated_data.get('username', instance.first_name)
         instance.last_name = validated_data.get('last_name', instance.last_name)  
         instance.email = validated_data.get('email', instance.email)
         instance.save()
