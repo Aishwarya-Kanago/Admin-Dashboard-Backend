@@ -1,7 +1,9 @@
  echo "BUILD START"
- python3.9 -m venv env
+ python3.12 -m venv env
  source env/bin/activate
  echo "Virtual ENV ACTIVATED"
- python3.9 -m pip install -r requirements.txt
- python3.9 manage.py collectstatic
+ sudo apt-get install python-dev default-libmysqlclient-dev
+ sudo apt-get install python3-dev
+ python3.12 -m pip install -r requirements.txt
+ python3.12 manage.py collectstatic
  echo "BUILD END"
