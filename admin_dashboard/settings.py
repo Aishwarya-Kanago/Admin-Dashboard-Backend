@@ -98,16 +98,12 @@ WSGI_APPLICATION = 'admin_dashboard.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'defaultdb',
         'USER': 'avnadmin',
         'PASSWORD': os.getenv("DB_PASS"),
-        'HOST': 'mysql-2e3071a6-christopherkeon11-08aa.b.aivencloud.com',
-        'PORT': '18400',
-        'OPTIONS': {
-            'sql_mode': 'STRICT_TRANS_TABLES',  # Enable strict mode for better data integrity
-            'charset': 'utf8mb4',  # Use modern character encoding
-        },
+        'HOST': 'pg-277de9eb-christopherkeon11-08aa.b.aivencloud.com',
+        'PORT': '18400'
     }
 }
 
