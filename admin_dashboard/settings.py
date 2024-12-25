@@ -26,12 +26,13 @@ SECRET_KEY = 'django-insecure-ayx+lr%hno6+axwbs)yq-_$(%b_yp(0e!huaf#omaiqhakpqkz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://aishwarya-kanago.github.io','http://localhost:5173']
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Add your frontend's URL here
+    "http://localhost:5173",
+    "https://aishwarya-kanago.github.io",
 ]
 
 
