@@ -26,13 +26,14 @@ SECRET_KEY = 'django-insecure-ayx+lr%hno6+axwbs)yq-_$(%b_yp(0e!huaf#omaiqhakpqkz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://aishwarya-kanago.github.io','http://localhost:5173']
+ALLOWED_HOSTS = ['https://aishwarya-kanago.github.io','http://localhost:5173',"admin-dashboard-backend-p5ussukag-aishwaryas-projects-232113c3.vercel.app"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://aishwarya-kanago.github.io",
+    "admin-dashboard-backend-p5ussukag-aishwaryas-projects-232113c3.vercel.app",
 ]
 
 
